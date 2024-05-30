@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionário</title>
+    <link rel="stylesheet" href="loginbiblio.css">
+    <script>
+        function logarBib() {
+
+            window.location.href = "biblioLog.html";
+        }
+    </script>
+</head>
+
+<body>
+    <a class="login" href="index.html">Tela Inicial</a>
+    <br>
+    <h1>Entrar como Bibliotecário</h1>
+
+    <div class="macaco">
+
+        <form id="loginForm">
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Endereço de Email</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+              </div>
+        <br>
+              <div class="form-floating">
+                <label for="floatingPassword">Senha</label><br>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+              </div>
+<br>
+              <div class="form-floating">
+                <label for="floatingPassword">ID de Funcionário</label><br>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="ID">
+              </div>
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Lembrar de mim </label>
+                    </div>
+                </div>
+                <br>
+
+                <button type="button" id="loginButton">Entrar</button><br><br>
+                <a href="login.html">É estudante? Clique aqui.</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+   
+        document.getElementById("loginButton").addEventListener("click", function() {
+
+            logarBib();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Estudante</title>
+    <link rel="stylesheet" href="estudLog.css">
+</head>
+
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+</script>
+
+<body>
+    <a class="login" href="index.html">Tela Inicial</a>
+    <div class="qualquercoisa">
+        <h1>Bem vindo(a)</h1>
+        <div id="wrapper">
+            <p><a class="button" href="#popup1">Empréstimos</a></p>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Empréstimos</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>Empréstimos realizados aparecerão aqui.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
